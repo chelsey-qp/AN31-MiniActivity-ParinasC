@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mini Activity Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+            <form name="calculator">
+                <input id="display" type="text" name="display" readonly>
+                <div id="error-message" style="color: red; font-size: 12px;"></div>
+
+                <input class="button digits" type="button" value="7" onclick="appendNumber('7')">
+                <input class="button digits" type="button" value="8" onclick="appendNumber('8')">
+                <input class="button digits" type="button" value="9" onclick="appendNumber('9')">
+                <input class="button mathButtons" type="button" value="+" onclick="appendOperator('+')">
+                <br>
+                <input class="button digits" type="button" value="4" onclick="appendNumber('4')">
+                <input class="button digits" type="button" value="5" onclick="appendNumber('5')">
+                <input class="button digits" type="button" value="6" onclick="appendNumber('6')">
+                <input class="button mathButtons" type="button" value="-" onclick="appendOperator('-')">
+                <br>
+                <input class="button digits" type="button" value="1" onclick="appendNumber('1')">
+                <input class="button digits" type="button" value="2" onclick="appendNumber('2')">
+                <input class="button digits" type="button" value="3" onclick="appendNumber('3')">
+                <input class="button mathButtons" type="button" value="*" onclick="appendOperator('*')">
+                <br>
+                <input id="clearButton" class="button" type="button" value="C" onclick="clearDisplay()">
+                <input class="button digits" type="button" value="0" onclick="appendNumber('0')">
+                <input class="button mathButtons" type="button" value="=" onclick="calculateResult()">
+                <input class="button mathButtons" type="button" value="÷" onclick="appendOperator('÷')">
+            </form>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

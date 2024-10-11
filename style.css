@@ -1,0 +1,80 @@
+body {
+  background-color: #FDE2E4; /* Light pink background */
+  font-family: Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#container {
+  width: 300px; /* Increased the width of the calculator */
+  padding: 16px 16px 30px 16px; /* Adjusted padding */
+  margin: 20px auto;
+  background-color: #F7CAC9; /* Soft pink container */
+  border-radius: 10px;
+  border: 2px solid #FFB6C1; /* Lighter pink border */
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2), inset -100px 0px 100px rgba(255, 255, 255, 0.4);
+}
+
+#display {
+  display: block;
+  margin: 15px auto;
+  height: 60px; /* Increased the height of the display */
+  width: 260px; /* Increased the width of the display */
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 2px solid #FFC0CB; /* Light pink */
+  background-color: #FFF0F5; /* Light lavender blush */
+  box-shadow: inset 0px 0px 10px #FFE4E1, inset 0px -20px 1px rgba(150, 150, 150, 0.2);
+  font-size: 36px; /* Increased font size */
+  color: #FF69B4; /* Hot pink */
+  text-align: right;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  margin: 4px; /* Increased margin for better spacing */
+  width: 60px; /* Increased the width of buttons */
+  height: 60px; /* Increased the height of buttons */
+  font-size: 22px; /* Increased font size */
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.mathButtons {
+  margin: 2px 2px 8px 2px;
+  color: #FFF;
+  background-color: #FF6F91; /* Bright pink for math operators */
+  border: 2px solid #FFB6C1;
+  box-shadow: 0px 0px 2px #FF6F91, inset 0px -20px 1px #FFB3C6;
+}
+
+.digits {
+  color: #8B0000; /* Deep pinkish-red for digits */
+  background-color: #FFC1CC; /* Lighter pink for digits */
+  border: 2px solid #FFB6C1;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px #FFE4E1, inset 0px -20px 1px #FFB3C6;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+  background-color: #FF91A4; /* Hover effect - slightly darker pink */
+  box-shadow: 0px 0px 2px #FF91A4, inset 0px -20px 1px #FF69B4;
+  border: 2px solid #FF69B4;
+}
+
+#clearButton {
+  color: #FFF;
+  background-color: #FF5C8A; /* Bright pink for clear button */
+  border: 2px solid #FFB6C1;
+  box-shadow: 0px 0px 2px #FF5C8A, inset 0px -20px 1px #FF91A4;
+}
+
